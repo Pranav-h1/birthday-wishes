@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Dad ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #090e1d;
+    color: white;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(circle at top, #26314e, #090e1d 70%);
+}
+
+.tag {
+    color: #e9c982;
+    letter-spacing: 4px;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 75px);
+    margin: 25px 0;
+    color: #f1d99e;
+    text-shadow: 0 5px 30px #e9c98235;
+}
+
+.hero p {
+    color: #b9c0d0;
+    line-height: 1.9;
+}
+
+.cake {
+    font-size: 90px;
+    margin: 25px;
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* BUTTON */
+
+button {
+    padding: 15px 30px;
+    margin-top: 25px;
+    background: linear-gradient(135deg, #f4dfa9, #c99b4e);
+    color: #101629;
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 25px #e9c98230;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px #e9c98255;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 80px 8%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.heading h2 {
+    color: #e9c982;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.heading p {
+    color: #9da6ba;
+}
+
+/* CARDS */
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: linear-gradient(145deg, #1c2944, #111a2d);
+    padding: 35px 25px;
+    border-radius: 28px;
+    border: 1px solid #ffffff18;
+    box-shadow: 0 15px 35px #0005;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #e9c98270;
+    box-shadow: 0 20px 40px #0007;
+}
+
+.card .icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #e9c982;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #b6bfd0;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* LETTER */
+
+.letter {
+    max-width: 750px;
+    margin: auto;
+    padding: 45px;
+    background: linear-gradient(145deg, #1d2942, #121a2d);
+    border: 1px solid #e9c98235;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px #0006;
+}
+
+.letter h2 {
+    color: #e9c982;
+    margin-bottom: 25px;
+}
+
+.letter p {
+    color: #c1c8d7;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+/* SURPRISE */
+
+.surprise {
+    max-width: 650px;
+    margin: auto;
+    padding: 45px 25px;
+    text-align: center;
+    background: #18243b;
+    border-radius: 30px;
+    border: 1px solid #ffffff20;
+    box-shadow: 0 20px 40px #0005;
+}
+
+#gift {
+    display: none;
+    margin-top: 25px;
+    color: #e9c982;
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 35px;
+    text-align: center;
+    color: #8c96aa;
+    background: #080c18;
+    border-top: 1px solid #ffffff15;
+}
+
+footer span {
+    color: #e9c982;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    .card-container,
+    .photos {
+        grid-template-columns: 1fr;
+    }
+
+    .letter {
+        padding: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<div class="hero" id="home">
+
+    <div class="tag">A SPECIAL DAY FOR SOMEONE SPECIAL</div>
+
+    <h1>Happy Birthday, Dad!</h1>
+
+    <p>
+        Today is all about celebrating you.
+        Thank you for everything you do for me.
+    </p>
+
+    <div class="cake">🎂</div>
+
+    <button onclick="celebrate()">
+        Celebrate Your Day ✨
+    </button>
+
+</div>
+
+<!-- WISHES -->
+
+<section id="wishes">
+
+    <div class="heading">
+        <h2>Why You're Special</h2>
+        <p>A few reasons why you're the best dad ever.</p>
+    </div>
+
+    <div class="card-container">
+
+        
+        <div class="card">
+            <div class="icon">⭐</div>
+            <h3>Your Support</h3>
+            <p>
+                Thank you for supporting my dreams
+                and believing in me.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏆</div>
+            <h3>Your Inspiration</h3>
+            <p>
+                You motivate me to learn, improve
+                and become better every day.
+            </p>
+        </div>
+        <div class="card">
+            <div class="icon">&#128161;</div>
+            <h3>Your Entrepreneurial Spirit</h3>
+            <p>
+                &ldquo;Great entrepreneurs turn bold ideas into hard work&mdash;and hard work into something meaningful.&rdquo;
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-- LETTER -->
+
+<section id="letter">
+
+    <div class="heading">
+        <h2>A Letter From Me ❤️</h2>
+    </div>
+
+    <div class="letter">
+
+        <h2>Dear Dad,</h2>
+
+        <p>
+            Thank you for always being there
+            for me, guiding me and supporting
+            everything I do.
+        </p>
+
+        <p>
+            You are my biggest inspiration.
+            I hope I can make you proud one day
+            and achieve all the things I dream of.
+        </p>
+
+        <p>
+            I may not say it every day, but
+            I am truly lucky to have you.
+        </p>
+
+        <h2>With Love, Pranav ❤️</h2>
+
+    </div>
+
+</section>
+
+<!-- GIFT -->
+
+<section>
+
+    <div class="surprise">
+
+        <h2 style="color:#e9c982;">
+            One Last Surprise 🎁
+        </h2>
+
+        <p style="color:#b6bfd0; margin-top:15px;">
+            I have something special for you.
+        </p>
+
+        <button onclick="openGift()">
+            Open Your Gift
+        </button>
+
+        <div id="gift">
+            You are my real-life superhero! ❤️
+            <br><br>
+            Happy 40thBirthday, Dad! 🎂
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    Made with ❤️ by <span>Pranav</span>
+    <br><br>
+    A little website, made with lots of love.
+</footer>
+
+<script>
+
+function celebrate() {
+    alert("HAPPY BIRTHDAY DAD!! 🎉🎂");
+}
+
+function openGift() {
+    document.getElementById("gift").style.display = "block";
+}
+
+</script>
+
+</body>
+</html>
